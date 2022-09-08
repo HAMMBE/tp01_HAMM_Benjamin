@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM</title>
+</head>
+<body>
+<form  method="post">
+
+    <label for="name">M.</label>
+    <input type="radio" name="Civ" id="civ1">
+
+    <label for="civ2">Mme</label>
+    <input type="radio" name="Civ" id="civ2"><br>
+
+    <label for="name">Name :</label>
+    <input type="text" name="name" id="name" pattern="[a-zA-Z-]+">
+
+    <br>
+
+    <label for="firstname">Firstname :</label>
+    <input type="text" name="firstname" id="firstname"  pattern="[a-zA-Z-]+">
+    <br>
+
+    <label for="password">Password : </label>
+    <input type="password" name="password" id="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$"><br>
+
+    At least one lowercase character, one uppercase character, one special character, one digit,  8 characters in length, but no more than 32.
+    <br>
+
+    <label for="email">Email :</label>
+    <input type="email" name="email" id="email">
+    <br>
+
+    <label for="phone">Phone :</label>
+    <input type="tel" name="phone" id="phone" pattern="[0-9]{10 }">
+    <br>
+
+    <label for="address">Address :</label>
+    <input type="text" name="address" id="address">
+    <br>
+
+    <label for="address">City :</label>
+    <input type="text" name="city" id="city" pattern="[a-zA-Z-]+">
+    <br>
+
+    <label for="CP">Postal :</label>
+    <input type="text" name="CP" id="CP" pattern="[0-9]{5}">
+    <br>
+
+    <label for="login">Login :</label>
+    <input type="text" name="login" id="login" pattern="[a-zA-Z0-9-]+">
+    <br>
+
+    <input type="submit" name="submit" id="submit">
+</form>
+</body>
+</html>
